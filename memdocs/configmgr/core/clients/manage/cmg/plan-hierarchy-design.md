@@ -57,9 +57,9 @@ Many organizations have separate environments for production, test, development,
   - Are user and device identities in the same tenant?
 
 - How many subscriptions are in each tenant?
-  - Are there subscriptions that are specific for testing?
+- Are there subscriptions that are specific for testing?
 
-Configuration Manager's Azure service for **Cloud management** supports multiple tenants. Multiple Configuration Manager sites can connect to the same tenant. A single site can deploy multiple CMG services into different subscriptions. Multiple sites can deploy CMG services into the same subscription. Configuration Manager provides flexibility depending upon your environment and business requirements.
+Configuration Manager's Azure service for **Cloud management** supports multiple tenants. Multiple Configuration Manager sites can connect to the same tenant. In the same way, a single site can deploy multiple CMG services each into different Azure subscriptions. Multiple sites can deploy CMG services into a shared subscription as well. Whether sites all use the same subscription to host CMG services or different subscriptions, there is no difference in performance or service resiliency. The decision to use multiple subscriptions for multiple CMG services depends on business factors. Configuration Manager provides flexibility depending upon your environment and business requirements.
 
 For more information, see the following FAQ: [Do the user accounts have to be in the same Azure AD tenant as the tenant associated with the subscription that hosts the CMG cloud service?](./cloud-management-gateway-faq.yml#do-the-user-accounts-have-to-be-in-the-same-azure-ad-tenant-as-the-tenant-associated-with-the-subscription-that-hosts-the-cmg-cloud-service-)
 
